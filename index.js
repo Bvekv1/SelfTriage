@@ -9,6 +9,7 @@ app.use(cors());
 const userController = require('./controllers/userController');
 
 app.post('/registerUser',userController.register);
+app.get('/loginUser',userController.Login);
 
 app.listen('3000');
 console.log('server started');
